@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Syne+Tactile&display=swap');
 
 header {
-    background-color: #bd93f9;
+    background-color: #6272a4;
     margin: 0;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -18,7 +18,7 @@ header a {
 }
 
 header a:hover {
-    color: #6272a4;
+    opacity: 50%;
     word-wrap: break-word;
 }
 
@@ -29,7 +29,7 @@ header a:hover {
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem;
-    background-color: #6272a4;
+    background-color: #bd93f9;
     border-radius: 1rem;
 }
 
