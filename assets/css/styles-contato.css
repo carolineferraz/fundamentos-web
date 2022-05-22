@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Syne+Tactile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Syne+Tactile&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif; 
+}
+
+:root {
+    --main-color: #6272a4;
+    --accent-color: #282a36;
+    --primary-color: #6272a4;
+    --background-color: #6272a4;
+  }
+
+header {
+    background-color: #6272a4;
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #50fa7b;
+    font-weight: bold;
+    padding-left: 5rem;
+    font-family: 'Lato', sans-serif; 
+}
+
+header a:hover {
+    opacity: 50%;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    color: #50fa7b;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    background-color: #bd93f9;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 3rem;
+    margin-right: 1.5rem;
+}
+
+section form label {
+    color: var(--accent-color);
+    margin-bottom: 0.275rem;
+    font-weight: 600;
+}
+
+section form input, section form textarea {
+    width: 100%;
+    resize: none; 
+    border: 0;
+    padding: 0.1rem;
+    font-size: 1.075rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 2px solid #282a36;
+    border-radius: 5px;
+}
+
+section form button {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 0.25rem;
+    background-color: #282a36;
+    color: var(--main-color);
+    font-size: 1.275rem;
+    font-weight: 600;
+    margin: 0 auto;
+    cursor: pointer; /* mudando o formatod o cursor do mouse quando colocar em cima do botão, praquele de mãozinha */
+    transition: 0.3s ease-out;
+  }
+  
+section form button:hover {
+    border-color: var(--primary-color);
+  }
+
+section div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    margin: 1rem;
+    background-color: #bd93f9;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 3rem;
+    margin-left: 1.5rem;
+}
+
+h2, p {
+    color: var(--accent-color);
+    margin-bottom: 0.275rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+h2{
+    font-size: x-large;
+    text-align: center;
+    font-weight: 800;
+}
+
+#mapa {
+    width: max(40vw, 500px);
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+hr {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    border-color: #50fa7b;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #50fa7b;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif; 
+    padding: 1rem;
+}
+
+footer a:hover {
+    opacity: 50%;
+}
+
+
+
+
+
+
+body {
+    background-color: #282a36;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+html {
+    height: 100%;
+}
