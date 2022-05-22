@@ -125,15 +125,33 @@ h2, p {
     text-align: start;
 }
 
-h2{
+h2 {
     font-size: x-large;
     text-align: center;
     font-weight: 900;
+    align-self: flex-start;
+}
+
+/* #children-3 {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+#children-3 #mapa {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 #mapa {
     aspect-ratio: 16/9;
-  }
+    margin: 0.75rem auto;
+    display: block;
+} */
 
 hr {
     margin-right: 3rem;
@@ -172,5 +190,10 @@ html {
 @media (max-width: 400px) {
     section {
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #container-contato {
+        overflow: overlay;
     }
 }
