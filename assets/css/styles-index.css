@@ -18,7 +18,6 @@ header a {
 
 header a:hover {
     opacity: 50%;
-    word-wrap: break-word;
 }
 
 #container-sobre {
@@ -53,11 +52,16 @@ h1 {
     font-family: 'Lato', sans-serif;
     color: #50fa7b;
     padding-top: 0rem;
-    margin-bottom: 0rem;
+    margin: 0rem;
+}
+
+h1:hover {
+    text-shadow: #6272a4 2px 5px;
 }
 
 #container-2 #container-2-children-1 {
     margin: 1rem;
+    padding-right: 50%;
 }
 
 #container-2 #container-2-children-2 {
@@ -80,6 +84,7 @@ img {
     border-radius: 50%;
     border-color: #6272a4;
     border: 4px solid #50fa7b;
+    filter: drop-shadow(8px 8px 4px #6272a4);
 }
 
 #container-video {
@@ -141,6 +146,7 @@ footer a:hover {
 body {
     background-color: #282a36;
     margin: 0;
+    padding: 0;
     min-height: 100vh;
 }
 

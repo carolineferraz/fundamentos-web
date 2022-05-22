@@ -29,7 +29,6 @@ header a {
 
 header a:hover {
     opacity: 50%;
-    word-wrap: break-word;
 }
 
 h1 {
@@ -39,6 +38,10 @@ h1 {
     text-align: center;
     margin-bottom: 0;
     font-weight: 900;
+}
+
+h1:hover {
+    text-shadow: #6272a4 2px 3px;
 }
 
 section {
@@ -62,6 +65,7 @@ section form {
     margin: 3rem;
     margin-right: 1.5rem;
     margin-top: 2rem;
+    height: 100%;
 }
 
 section form label {
@@ -120,7 +124,7 @@ section #container-contato {
 
 h2, p {
     color: var(--accent-color);
-    margin-bottom: 0.275rem;
+    margin: .5rem;
     font-weight: 600;
     text-align: start;
 }
@@ -130,28 +134,25 @@ h2 {
     text-align: center;
     font-weight: 900;
     align-self: flex-start;
+    margin: .5rem;
 }
 
-/* #children-3 {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+section #container-contato #children-1,  section #container-contato #children-2 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-#children-3 #mapa {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+section #container-contato #children-2 {
+    margin-top: 1rem;
+    flex-direction: column;
 }
 
-#mapa {
-    aspect-ratio: 16/9;
-    margin: 0.75rem auto;
-    display: block;
-} */
+section #container-contato #children-3 {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
 
 hr {
     margin-right: 3rem;
