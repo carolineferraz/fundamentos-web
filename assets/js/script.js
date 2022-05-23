@@ -15,7 +15,7 @@
 //Chamando os métodos (exemplos):
 
 //Para chamar o id "nome":
-var nome = window.getElementById('nome')
+var nome = window.document.getElementById('nome')
 
 //Para chamar a classe "email":
 //let email = document.querySelector('#email') //ou
@@ -27,10 +27,27 @@ nome.style.width = '100%'
 
 email.style.width = '100%'
 
+//function validaNome() {
+
+//    if (nome.value.length < 3) {
+//       alert("nome inválido")
+//    }
+
+//}
+
+let nameOk = false
+
 function validaNome() {
 
+    let txtNome = document.querySelector("#txtNome")
     if (nome.value.length < 3) {
-        alert('nome inválido')
+    txtNome.innerHTML = "Esse nome não parece um nome válido..."
+    txtNome.style.color = "red"
+    } else {
+        txtNome.innerHTML  = "Ok!"
+        txtNome.style.color = "green"
+        nameOk = true
     }
 
 }
+
