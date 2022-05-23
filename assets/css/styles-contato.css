@@ -97,7 +97,7 @@ section form button {
     font-size: 1.275rem;
     font-weight: 600;
     margin: 0 auto;
-    cursor: pointer; /* mudando o formatod o cursor do mouse quando colocar em cima do botão, praquele de mãozinha */
+    cursor: pointer; 
     transition: 0.3s ease-out;
   }
   
@@ -135,6 +135,10 @@ h2 {
     font-weight: 900;
     align-self: flex-start;
     margin: .5rem;
+}
+
+h2:hover {
+    text-shadow: #50fa7b 2px 2px;
 }
 
 section #container-contato #children-1,  section #container-contato #children-2 {

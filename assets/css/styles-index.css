@@ -53,9 +53,6 @@ h1 {
     color: #50fa7b;
     padding-top: 0rem;
     margin: 0rem;
-}
-
-h1:hover {
     text-shadow: #6272a4 2px 5px;
 }
 
@@ -113,7 +110,7 @@ h2 {
 }
 
 h2:hover {
-    text-shadow: #6272a4 2px 3px;
+    text-shadow: #50fa7b 2px 2px;
 }
 
 #video {
