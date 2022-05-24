@@ -15,17 +15,17 @@
 //Chamando os métodos (exemplos):
 
 //Para chamar o id "nome":
-var nome = window.document.getElementById('nome')
+//var nome = window.document.getElementById('nome')
 
 //Para chamar a classe "email":
 //let email = document.querySelector('#email') //ou
-let email = document.querySelector('input.email')
+//let email = document.querySelector('input.email')
 
-let assunto = document.querySelector('#assunto')
+//let assunto = document.querySelector('#assunto')
 
-nome.style.width = '100%'
+//nome.style.width = '100%'
 
-email.style.width = '100%'
+//email.style.width = '100%'
 
 //function validaNome() {
 
@@ -35,7 +35,7 @@ email.style.width = '100%'
 
 //}
 
-let nameOk = false
+let nomeOk = false
 
 function validaNome() {
 
@@ -46,8 +46,50 @@ function validaNome() {
     } else {
         txtNome.innerHTML  = "Ok!"
         txtNome.style.color = "green"
-        nameOk = true
+        nomeOk = true
     }
 
 }
 
+// A função validaEmail ainda está incompleta...
+/*
+function validaEmail() {
+    var email = document.getElementById('txtEmail');
+    var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!filter.test(email.value)) {
+        txtEmail.innerHTML = "Esse nome não parece um e-mail válido...";
+        txtEmail.style.color = "red";
+        email.focus;
+        return false;
+    } else {
+        txtEmail.innerHTML  = "Ok!";
+        return true;
+    }
+}
+*/
+
+
+let assuntoOk = false
+
+function validaAssunto() {
+
+    let txtAssunto = document.querySelector("#txtAssunto")
+
+    if (assunto.value.length > 300) {
+        txtAssunto.innerHTML = "Por favor, digite até 300 caracteres."
+        txtAssunto.style.color = "red"
+    } else {
+        txtAssunto.innerHTML = "Ok!"
+        txtAssunto.style.color = "green"
+        assuntoOk = true
+    }
+
+}
+
+function enviar() {
+    if(nomeOk == true && assuntoOk == true) {
+        alert ("Formulário enviado com sucesso!")
+    } else {
+        alert ("Preencha o formulário corretamente antes de enviar...")
+    }
+}
