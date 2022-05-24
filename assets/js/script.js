@@ -41,32 +41,32 @@ function validaNome() {
 
     let txtNome = document.querySelector("#txtNome")
     if (nome.value.length < 3) {
-    txtNome.innerHTML = "Esse nome não parece um nome válido..."
-    txtNome.style.color = "red"
+        txtNome.innerHTML = "Esse nome não parece válido..."
+        txtNome.style.color = "red"
     } else {
-        txtNome.innerHTML  = "Ok!"
+        txtNome.innerHTML = "Ok!"
         txtNome.style.color = "green"
         nomeOk = true
     }
 
 }
 
-// A função validaEmail ainda está incompleta...
-/*
+let emailOk = false
+
 function validaEmail() {
-    var email = document.getElementById('txtEmail');
-    var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!filter.test(email.value)) {
-        txtEmail.innerHTML = "Esse nome não parece um e-mail válido...";
-        txtEmail.style.color = "red";
-        email.focus;
-        return false;
+
+    let txtEmail = document.querySelector("#txtEmail")
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (email.value.match(regexEmail)) {
+        txtEmail.innerHTML = "Ok!"
+        txtEmail.style.color = "green"
+        emailOk = true
     } else {
-        txtEmail.innerHTML  = "Ok!";
-        return true;
+        txtEmail.innerHTML = "Esse e-mail não parece válido..."
+        txtEmail.style.color = "red"
     }
 }
-*/
 
 
 let assuntoOk = false
@@ -87,9 +87,9 @@ function validaAssunto() {
 }
 
 function enviar() {
-    if(nomeOk == true && assuntoOk == true) {
-        alert ("Formulário enviado com sucesso!")
+    if (nomeOk == true && emailOk == true && assuntoOk == true) {
+        alert("Formulário enviado com sucesso!")
     } else {
-        alert ("Preencha o formulário corretamente antes de enviar...")
+        alert("Preencha o formulário corretamente antes de enviar...")
     }
 }
